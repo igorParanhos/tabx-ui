@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "tabx-ui"
+version = "0.1.0"
+description = ""
+authors = ["Igor Paranhos <igor.paranhosto@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+tabx-ui = "tabx_ui.__init__:main"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+kivy = {extras = ["base"], version = "^2.3.0"}
+kivy-examples = "^2.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
